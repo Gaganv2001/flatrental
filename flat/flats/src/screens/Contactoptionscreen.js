@@ -1,0 +1,7 @@
+const contactConfig = {
+    
+};
+
+export {
+    contactConfig
+};

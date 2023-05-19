@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+p{
+  font-size: 16px !important;
+}
+
+.navbar{
+  background-color: white !important;
+}
+.nav-link {
+  color: black !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: blue !important;
+}
+
+.navbar-brand{
+  color: black !important;
+}
+
+.navbar-nav{
+   margin-left: auto !important; 
+}
+.smallimg{
+  height: 200px;
+  width: 100% !important;
+  border-radius: 5px !important;
+}
+h1{
+  font-size: 20px !important;
+}
+
+.btn{
+  background-color: black !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+.bs{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+}
+.bigimg{
+  height: 400px;
+  max-width: calc(100% - 10px);
+}
+input{
+  box-shadow: none !important;
+  margin-top: 10px;
+  border: 1px solid black !important;
+}
+h2{
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold !important;
+  text-align: center;
+}
+.landing {
+  position: relative;
+  height: 92vh;
+  overflow: hidden;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('building.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(30%);
+}
+
+.landing-content {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.landing-content h2,
+.landing-content h1,
+.landing-content button {
+  color: whitesmoke;
+  filter: brightness(100%);
+  margin: 0;
+  text-align: left;
+}
+
+
+.landingbtn{
+  background-color: white !important;
+  color: #52aee5 !important;
+  margin-top: 10px;
+}
+.dropdown-toggle{
+  border: #003680 !important;
+}
+
+.register{
+  max-width: 978px;
+  width: 100vw;
+  display:flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  /* box-shadow: 1px 3px 10px #e9ecef; */
+  background-color: white;
+
+}
+.register span{
+  color: #adb5bd;
+  justify-content: center;
+}
+
+#form{
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+
+#form >  input, .btn{
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+}
+
+#form > input:focus{
+  outline: none;
+}
+
+#form > .btn{
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.register .col-1{
+  margin: auto;
+  padding: 3em 0;
+}
+
+.register .col-2 img{
+  width: 480px;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+}
+
+
+
+@media screen and (min-width: 860px)  {
+  .register .col-2 img{
+    display: initial;
+  }
+}
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .landing {
+    height: 100vh;
+  }
+  
+  .landing::before {
+    height: 100vh;
+  }
+  
+  .landing-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+  .landing {
+    height: 92vh;
+  }
+  
+  .landing::before {
+    height: 92vh;
+  }
+  
+  .landing-content {
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+}
+
+.landing {
+  position: relative;
+  overflow: hidden;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('building.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(30%);
+}
+
+.landing-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.landing-content h2,
+.landing-content h1,
+.landing-content button {
+  color: whitesmoke;
+  filter: brightness(100%);
+  margin: 0;
+}
+
+.landingbtn {
+  background-color: white !important;
+  color: black !important;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar-toggler {
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
